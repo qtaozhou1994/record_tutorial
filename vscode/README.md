@@ -1,4 +1,3 @@
-# test_vscode_c-
 # Test-vscode-cplus
 
 ### 项目介绍
