@@ -4,7 +4,7 @@
 RUN apt-get -y install sudo curl openssh-client openssh-server vim
 
 # set root login
-RUN echo "root:passwd123" | chpasswd
+RUN echo "root:root" | chpasswd
 RUN sed -ri 's/^#PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config  
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config 
